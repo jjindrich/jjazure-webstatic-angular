@@ -1,5 +1,11 @@
 # Azure Static Web App with Angular
 
+This repo shows how to use [Azure Static Web App](https://docs.microsoft.com/en-us/azure/static-web-apps) with Angular and Azure Functions NodeJs.
+
+Docs
+- https://medium.com/bb-tutorials-and-thoughts/building-an-angular-app-with-azure-static-web-apps-service-8fe84ebe4709
+- https://github.com/bbachi/angular-azure-static-web-app
+
 ## Create Angular application
 
 You can create new custom one
@@ -7,6 +13,7 @@ You can create new custom one
 ```
 ng new jjtodoapp
 ```
+> You can generate application base on https://github.com/staticwebdev/angular-basic/generate and create new GitHub repository (using older packages).
 
 Run app locally
 
@@ -14,8 +21,6 @@ Run app locally
 cd jjtodoapp
 ng serve
 ```
-
-Or you can generate application base on https://github.com/staticwebdev/angular-basic/generate and create new GitHub repository (using older packages).
 
 ## Create Azure Static Web App
 
@@ -52,8 +57,20 @@ Now we have to change GitHub workflow
 - Output location - dist/jjtodoapp/browser
 - add app_build_command: "npm run prerender"
 
-## Develop application and function
+## Add Azure Function
 
 Docs
-- https://medium.com/bb-tutorials-and-thoughts/building-an-angular-app-with-azure-static-web-apps-service-8fe84ebe4709
+- https://docs.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript
+
+Use Azure Static Web Apps extension in VS Code to create new Function
+- name: getMessage
+- languge: Javascript
+
+Install CLI
+
+```
+npm install -g @azure/static-web-apps-cli
+```
+
+
 
