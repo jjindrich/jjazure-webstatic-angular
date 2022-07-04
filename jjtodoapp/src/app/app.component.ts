@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jjtodoapp';
+
+  message = '';
+
+  constructor(private http: HttpClient) {
+    this.http.get('/api/getmessage')
+      .subscribe((resp: any) => this.message = resp.text);
+  }
 }

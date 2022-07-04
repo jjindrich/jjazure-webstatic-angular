@@ -67,10 +67,15 @@ Use Azure Static Web Apps extension in VS Code to create new Function
 - languge: Javascript
 
 Install CLI
-
 ```
 npm install -g @azure/static-web-apps-cli
 ```
 
+Build and run locally
+```
+npm run build --prod --prefix jjtodoapp
+swa start jjtodoapp/dist/jjtodoapp/browser --api-location api
+``
 
-
+Now we can change GitHub workflow
+- change api_location: "api"
