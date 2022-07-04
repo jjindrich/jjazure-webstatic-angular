@@ -1,55 +1,14 @@
-# Angular basic
+# Azure Static Web App with Angular
 
-[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build [Angular](https://angular.io/) apps in minutes. Use this repo with the [Angular quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=angular) to build and customize a new static site.
+## Create from template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
+Visit https://github.com/staticwebdev/angular-basic/generate and create new GitHub repository
 
-## Project setup
+## Create Azure Static Web App
 
-```bash
-npm install
-```
+Create new Azure resource Azure Static Web App
+- link to existing GitHub repository
+- Build details - Angular
 
-### Start the dev server
+It create Github workflow automatically in [.github\workflows](\.github\workflows) and deploy app.
 
-```bash
-npm run swa:start
-```
-
-> Note: This command will use the local configuration file `swa-cli.config.json`.
-
-### Run unit tests
-
-```bash
-npm test
-```
-
-### Run e2e tests
-
-```bash
-npm run e2e
-```
-
-### Lints and fixes files
-
-```bash
-npm run lint
-```
-
-### Compiles and minifies for production
-
-```bash
-npm run build
-```
-
-### Login to Azure
-
-```bash
-npm run swa:login
-```
-
-### Deploy to Azure
-
-```bash
-npm run swa:deploy
-```
