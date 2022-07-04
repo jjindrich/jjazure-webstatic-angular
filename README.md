@@ -26,8 +26,8 @@ Create new Azure resource Azure Static Web App
 - link to existing GitHub repository
 - Build details
     - Presets - Angular
-    - App location - /jjtodoapp
-    - Output location - jjtodoapp/dist/jjtodoapp
+    - App location - jjtodoapp
+    - Output location - dist/jjtodoapp
 
 It create Github workflow automatically in [.github\workflows](\.github\workflows) and deploy app. 
 > For deployment you have to commit something
