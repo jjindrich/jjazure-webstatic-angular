@@ -41,7 +41,16 @@ Docs
 ```
 ng add @nguniversal/express-engine
 ```
-> I have to change packages versions to 14.0.4 first.
+
+It adds references and code to serve /browser content (/dist/jjtodoapp/browser). You can test it
+
+```
+npm run dev:ssr
+```
+
+Now we have to change GitHub workflow
+- Output location - dist/jjtodoapp/browser
+- add app_build_command: "npm run prerender"
 
 ## Develop application and function
 
