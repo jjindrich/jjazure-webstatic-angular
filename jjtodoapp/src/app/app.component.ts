@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'jjtodoapp';
 
-  message = '';
+  message = 'nenacteno';
 
   constructor(private http: HttpClient) {
     this.http.get('/api/getmessage')
