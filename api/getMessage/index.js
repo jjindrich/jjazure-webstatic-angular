@@ -6,8 +6,12 @@ module.exports = async function (context, req) {
         ? "Hello " + name + "."
         : "Nothing";
 
-    context.res = {
-        // status: 200, /* Defaults to 200 */
-        body: responseMessage
-    };
+    // context.res = {
+    //     // status: 200, /* Defaults to 200 */
+    //     body: responseMessage
+    // };
+
+    context.res.json({
+        text: responseMessage
+    });
 }
