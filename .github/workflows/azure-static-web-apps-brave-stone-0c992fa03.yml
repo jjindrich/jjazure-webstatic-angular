@@ -31,7 +31,7 @@ jobs:
           api_location: "api" # Api source code path - optional
           output_location: "dist/jjtodoapp" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-      - run: echo ls -R
+      - run: ls -R
         if: always()  
 
   close_pull_request_job:
