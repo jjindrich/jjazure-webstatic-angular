@@ -55,7 +55,6 @@ npm run dev:ssr
 
 Now we have to change GitHub workflow
 - Output location - dist/jjtodoapp/browser
-- add app_build_command: "npm run prerender"
 
 ## Add Azure Function
 
